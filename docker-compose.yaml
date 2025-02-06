@@ -7,8 +7,8 @@ x-common:
   env_file:
     - .env
   volumes:
-    - ./app/dags:/opt/airflow/dags
-    - ./app/logs:/opt/airflow/logs
+    - ./dags:/opt/airflow/dags
+    - ./logs:/opt/airflow/logs
 
 x-depends-on:
   &depends-on
