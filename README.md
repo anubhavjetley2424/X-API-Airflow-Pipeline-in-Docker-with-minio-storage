@@ -5,7 +5,9 @@
 The traditional library 'tweepy' does not seem to work in Docker, hence we are using requests and a dynamic url retrieving the 50 latest tweets from that X account.
 ### Dynamic URL:
  url = f"{BASE_URL}?query=from:{USERNAME}&tweet.fields={','.join(FIELDS)}&expansions=author_id&max_results=50"
- Note: you can remove from: to generate the 50 latest tweets based on that query topic.
+ <br></br>
+ ## Note: you can remove from: to generate the 50 latest tweets based on that query topic.
+ <br></br>
  To remove retweets, use : url = f"{BASE_URL}?query=from:{USERNAME} -is:retweet&tweet.fields={','.join(FIELDS)}&expansions=author_id&max_results=50"
  
 # To apply:
