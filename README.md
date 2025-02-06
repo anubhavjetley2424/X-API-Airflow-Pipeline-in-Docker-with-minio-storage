@@ -1,7 +1,8 @@
 # Build an Apache Airflow to extract X Api data based on recent tweets from an account and store them in a minio storage bucket.
 
 ![architecture](https://github.com/user-attachments/assets/a676b5c9-2417-424a-9edc-209aba848d11)
-
+# Methodology:
+The traditional library 'tweepy' does not seem to work in Docker, hence we are using requests and a dynamic url retrieving the 50 latest tweets from that X account.
 # To apply:
 1. Create your own .env file storing API keys neccessary
     cp sample.env .env
