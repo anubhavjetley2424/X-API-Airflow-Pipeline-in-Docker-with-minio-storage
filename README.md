@@ -1,4 +1,4 @@
-Build an Apache Airflow to extract X Api data based on recent tweets from an account and store them in a minio storage bucket.
+# Build an Apache Airflow to extract X Api data based on recent tweets from an account and store them in a minio storage bucket.
 
 ![architecture](https://github.com/user-attachments/assets/a676b5c9-2417-424a-9edc-209aba848d11)
 
