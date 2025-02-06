@@ -7,10 +7,12 @@ Build an Apache Airflow to extract X Api data based on recent tweets from an acc
     cp sample.env .env
 2. Add your X Bearer Token
     TWITTER_BEARER_TOKEN="bearer_token_example"
-3. Start Docker instance
+3. Unzip dag.zip file
+   !unzip dags.zip
+4. Start Docker instance
    docker compose up -d
-4. Locate Pipeline task actions and success in:
+5. Locate Pipeline task actions and success in:
    http://localhost:8080
-5. Get data passed to minio bucket in:
+6. Get data passed to minio bucket in:
    http://localhost:9090
    
